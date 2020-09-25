@@ -5,10 +5,11 @@ import android.util.AttributeSet
 import androidx.constraintlayout.motion.widget.MotionLayout
 
 class MotionInsideMotion
-@JvmOverloads constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int = 0) :
+@JvmOverloads
+constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int = 0) :
     MotionLayout(context, attrs, defStyleAttr), MotionLayout.TransitionListener {
 
-    var isTransitionStart = false
+    private var isTransitionStart = false
 
     override fun onAttachedToWindow() {
         (parent as? MotionLayout)?.setTransitionListener(this)
