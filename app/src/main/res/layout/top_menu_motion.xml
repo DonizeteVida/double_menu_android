@@ -7,11 +7,12 @@
     app:layoutDescription="@xml/top_menu_motion_scene"
     tools:context=".MainActivity">
 
-    <View
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/space_control"
-        android:layout_width="179dp"
-        android:layout_height="match_parent"
-        android:visibility="invisible" />
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="220dp"/>
 
     <View
         android:id="@+id/slide_control"
