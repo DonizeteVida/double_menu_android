@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/control"
-        android:layout_width="220dp"
-        android:layout_height="match_parent"
-        android:visibility="invisible" />
+    <include layout="@layout/double_menu_motion"/>
 
-    <include layout="@layout/content_motion" />
-
-    <include layout="@layout/menu" />
-
-
-</androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
