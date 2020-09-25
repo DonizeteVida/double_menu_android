@@ -8,13 +8,13 @@
     tools:context=".MainActivity">
 
     <View
-        android:id="@+id/control"
+        android:id="@+id/space_control"
         android:layout_width="179dp"
         android:layout_height="match_parent"
         android:visibility="invisible" />
 
     <View
-        android:id="@+id/mover"
+        android:id="@+id/slide_control"
         android:layout_width="0dp"
         android:layout_height="0dp" />
 

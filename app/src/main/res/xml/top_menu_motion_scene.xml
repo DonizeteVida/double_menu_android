@@ -9,7 +9,7 @@
 
         <OnSwipe
             motion:dragDirection="dragRight"
-            motion:touchAnchorId="@id/mover"
+            motion:touchAnchorId="@id/slide_control"
             motion:touchAnchorSide="right" />
     </Transition>
 
@@ -24,7 +24,7 @@
             motion:layout_constraintWidth_percent="1" />
 
         <Constraint
-            android:id="@id/mover"
+            android:id="@id/slide_control"
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:visibility="invisible"
@@ -35,12 +35,12 @@
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@id/mover"
+            android:id="@id/slide_control"
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:visibility="invisible"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintStart_toEndOf="@id/control"
+            motion:layout_constraintStart_toEndOf="@id/space_control"
             motion:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
@@ -49,7 +49,7 @@
             android:scaleY=".87"
             android:scaleX=".87"
             android:layout_height="match_parent"
-            motion:layout_constraintStart_toEndOf="@id/mover"
+            motion:layout_constraintStart_toEndOf="@id/slide_control"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintWidth_default="percent"
             motion:layout_constraintWidth_percent="1" />
