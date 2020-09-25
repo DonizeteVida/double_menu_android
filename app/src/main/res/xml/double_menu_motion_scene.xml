@@ -72,7 +72,7 @@
             android:id="@id/content"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="300dp"
+            android:layout_marginLeft="220dp"
             motion:layout_constraintLeft_toLeftOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintWidth_default="percent"
