@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_main_scene"
+    app:layoutDescription="@xml/double_menu_motion_scene"
     tools:context=".MainActivity">
 
     <View
@@ -13,9 +13,8 @@
         android:layout_height="match_parent"
         android:visibility="invisible" />
 
-    <include layout="@layout/content_motion" />
+    <include layout="@layout/content" />
 
     <include layout="@layout/double_menu" />
-
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
