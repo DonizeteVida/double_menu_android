@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include layout="@layout/double_menu_motion"/>
+    <include layout="@layout/top_menu_motion"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

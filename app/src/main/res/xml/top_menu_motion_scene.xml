@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/menu_transition_start_to_end"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start">
+
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorId="@id/mover"
+            motion:touchAnchorSide="right" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            motion:layout_constraintLeft_toRightOf="@+id/not_exist"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1" />
+
+        <Constraint
+            android:id="@id/mover"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/mover"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="@id/control"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@id/content"
+            android:layout_width="0dp"
+            android:scaleY=".87"
+            android:scaleX=".87"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toEndOf="@id/mover"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1" />
+    </ConstraintSet>
+
+</MotionScene>
