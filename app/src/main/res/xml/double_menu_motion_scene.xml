@@ -27,16 +27,12 @@
         <Constraint
             android:id="@id/menu"
             android:layout_height="match_parent"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintEnd_toStartOf="parent" />
 
         <Constraint
             android:id="@id/content"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            motion:layout_constraintLeft_toRightOf="@+id/not_exist"
-            motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintWidth_default="percent"
             motion:layout_constraintWidth_percent="1" />
     </ConstraintSet>
@@ -45,17 +41,14 @@
         <Constraint
             android:id="@id/menu"
             android:layout_height="match_parent"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="@id/space_control"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintEnd_toEndOf="@id/space_control" />
 
         <Constraint
             android:id="@id/content"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="220dp"
+            android:layout_marginStart="220dp"
             motion:layout_constraintLeft_toLeftOf="parent"
-            motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintWidth_default="percent"
             motion:layout_constraintWidth_percent="1" />
     </ConstraintSet>
@@ -64,9 +57,7 @@
         <Constraint
             android:id="@id/menu"
             android:layout_height="match_parent"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintStart_toStartOf="parent" />
 
         <Constraint
             android:id="@id/content"
@@ -74,7 +65,6 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="220dp"
             motion:layout_constraintLeft_toLeftOf="parent"
-            motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintWidth_default="percent"
             motion:layout_constraintWidth_percent="1" />
     </ConstraintSet>
