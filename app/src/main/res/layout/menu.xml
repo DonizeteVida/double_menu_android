@@ -2,12 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/menu"
-    android:layout_width="260dp"
+    android:layout_width="300dp"
     android:layout_height="match_parent">
 
     <View
         android:id="@+id/menu_extra_content"
-        android:layout_width="60dp"
+        android:layout_width="80dp"
         android:layout_height="match_parent"
         android:background="#F00"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,7 +16,7 @@
 
     <View
         android:id="@+id/menu_content"
-        android:layout_width="200dp"
+        android:layout_width="220dp"
         android:layout_height="match_parent"
         android:background="#F0FF"
         app:layout_constraintBottom_toBottomOf="parent"

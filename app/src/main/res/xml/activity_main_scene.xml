@@ -3,6 +3,7 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
+        android:id="@+id/menu_transition_start_to_middle"
         motion:constraintSetEnd="@+id/middle"
         motion:constraintSetStart="@+id/start">
 
@@ -13,6 +14,7 @@
     </Transition>
 
     <Transition
+        android:id="@+id/menu_transition_middle_to_end"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@+id/middle">
         <OnSwipe
@@ -24,7 +26,6 @@
     <ConstraintSet android:id="@+id/start">
         <Constraint android:id="@id/menu">
             <Layout
-                android:layout_width="260dp"
                 android:layout_height="match_parent"
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintEnd_toStartOf="parent"
@@ -35,7 +36,6 @@
     <ConstraintSet android:id="@+id/middle">
         <Constraint android:id="@id/menu">
             <Layout
-                android:layout_width="260dp"
                 android:layout_height="match_parent"
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintEnd_toEndOf="@id/control"
@@ -46,7 +46,6 @@
     <ConstraintSet android:id="@+id/end">
         <Constraint android:id="@id/menu">
             <Layout
-                android:layout_width="260dp"
                 android:layout_height="match_parent"
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintStart_toStartOf="parent"

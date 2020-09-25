@@ -9,10 +9,13 @@
 
     <View
         android:id="@+id/control"
-        android:layout_width="200dp"
-        android:layout_height="match_parent"/>
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
 
-    <include
-        layout="@layout/menu" />
+    <include layout="@layout/content_motion" />
+
+    <include layout="@layout/menu" />
+
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
